@@ -160,6 +160,8 @@ class DjangoBehaveTestCase(LiveServerTestCase):
 
     def setUp(self):
         self.setupBehave()
+    def _post_teardown(self):
+        pass
 
     def setupBehave(self):
         # Create a sys.argv suitable for Behave to parse
